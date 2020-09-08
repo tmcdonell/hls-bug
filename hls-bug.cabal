@@ -1,0 +1,40 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: b335b25983c9351c6d6141f7c2129fa1286f1b52f7228b9050075b24c1226ad9
+
+name:           hls-bug
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/tmcdonell/hls-bug#readme>
+homepage:       https://github.com/tmcdonell/hls-bug#readme
+bug-reports:    https://github.com/tmcdonell/hls-bug/issues
+author:         Trevor L. McDonell
+maintainer:     trevor.mcdonell@gmail.com
+copyright:      2020 Trevor L. McDonell
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+    cbits/answer.c
+
+source-repository head
+  type: git
+  location: https://github.com/tmcdonell/hls-bug
+
+library
+  exposed-modules:
+      A
+      B
+  other-modules:
+      Paths_hls_bug
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , template-haskell
+  default-language: Haskell2010
